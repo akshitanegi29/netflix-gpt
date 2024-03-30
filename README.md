@@ -2,7 +2,9 @@
 - npx create-react-app netflix-gpt
 - configured tailwind css https://tailwindcss.com/docs/guides/create-react-app
 - config router using npm i react-router-dom
-
+- header with logo
+- login form
+- Sign up form
 # Features
 - Login/Sign Up
     - Sign In /Sign up Form
