@@ -12,6 +12,7 @@
  tool
 - firebase config to set up deployment - firebase login > firebase init > firebase deploy
 - create sign up user account
+- created userSlice with redux store
 # Features
 - Login/Sign Up
     - Sign In /Sign up Form
