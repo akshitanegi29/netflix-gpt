@@ -8,6 +8,9 @@
 - Sign up form
 - Form validation
 - useRef hook to set ref to form input fields
+- firebase set up and config - enabled email pass auth in firebase
+ tool
+- firebase config to set up deployment - firebase login > firebase init > firebase deploy
 # Features
 - Login/Sign Up
     - Sign In /Sign up Form
