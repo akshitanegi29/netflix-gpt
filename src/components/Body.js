@@ -3,8 +3,8 @@ import Browse from "./Browse"
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { auth } from "firebase/auth";
+import { onAuthStateChanged } from "firebase/auth";
+import {auth} from "../utils/firebase";
 import { addUser, removeUser } from "../utils/userSlice";
 
 const appRouterConfig = createBrowserRouter([
