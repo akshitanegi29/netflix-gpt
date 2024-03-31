@@ -3,8 +3,11 @@
 - configured tailwind css https://tailwindcss.com/docs/guides/create-react-app
 - config router using npm i react-router-dom
 - header with logo
+- Routing
 - login form
 - Sign up form
+- Form validation
+- useRef hook to set ref to form input fields
 # Features
 - Login/Sign Up
     - Sign In /Sign up Form
