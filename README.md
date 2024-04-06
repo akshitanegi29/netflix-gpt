@@ -21,7 +21,7 @@
 - If logged user access /login page then redirect to /browse
   - above bugfixes removed by attaching the event onAuthStateChange to some common comp like Header instead of Body comp.
 - code cleanup - unsubscribe onAuthStateChange when comp unmounts
-
+- get nowPlaying movies list from TMBD Api and create a new movieslice to store the api result.
 
 # Features
 - Login/Sign Up
