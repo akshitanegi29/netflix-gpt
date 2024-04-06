@@ -17,6 +17,10 @@
 - onAuthStateChanged gets called as soon as user sign in/sign out or log our
 - if user signs in then redirect to browse page and if user sign out redirect to main page or login page - useNavigate Hook
 - sign out functionality added
+- Bugfix: logged out user should not access /browse page directly
+- If logged user access /login page then redirect to /browse
+  - above bugfixes removed by attaching the event onAuthStateChange to some common comp like Header instead of Body comp.
+- code cleanup - unsubscribe onAuthStateChange when comp unmounts
 
 
 # Features
