@@ -28,9 +28,16 @@
 - Planning structure of MainContauiner & secondary container
 - created video title and video background
     - from list of now playing movie get the first movie and extract its movie id. pass that movie id to VideoContainer and make an api call to fetch the movie trailer of that id.
-    - save the trailer video info in new slice - trailer video
+    - save the trailer video info in store - trailer video
     - create a custom hook for trailer video info
-- created    
+    - Embedded the Yotube video and make it autoplay and mute
+    - Tailwind Classes to make Main Container look awesome
+- Build Secondary Component
+- Build Movie List
+- build Movie Card
+- TMDB Image CDN URL
+- Made the Browse page amazing with Tailwind CSS
+- useTrendingMovies and useTopRatedMovies Custom hook    
 
 # Features
 - Login/Sign Up

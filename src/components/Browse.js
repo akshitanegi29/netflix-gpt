@@ -1,10 +1,15 @@
 /* eslint-disable no-lone-blocks */
 import useNowPlaying from "../hooks/useNowPlaying";
+import useTopRatedMovies from "../hooks/useTopRatedMovies"
+import useTrendingMovies from "../hooks/useTrendingMovies"
+
 import Header from "./Header";
 import MainContainer from "./MainContainer";
-
+import SecondaryContainer from "./SecondaryContainer"
 const Browse = () => {
   useNowPlaying();
+  useTopRatedMovies()
+  useTrendingMovies()
 
   {
     /*
@@ -21,6 +26,7 @@ const Browse = () => {
     <div>
       <Header />
       <MainContainer />
+      <SecondaryContainer/>
     </div>
   );
 };
