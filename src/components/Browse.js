@@ -1,12 +1,27 @@
-import useNowPlaying from "../hooks/useNowPlaying"
+/* eslint-disable no-lone-blocks */
+import useNowPlaying from "../hooks/useNowPlaying";
 import Header from "./Header";
+import MainContainer from "./MainContainer";
 
 const Browse = () => {
+  useNowPlaying();
 
-  useNowPlaying()
+  {
+    /*
+        Main Container 
+          Video Title
+          Video BACKGROUND
+        Secondary Container 
+          Movie List * n
+          Cards * N
+*/
+  }
 
   return (
-    <Header/>
+    <div>
+      <Header />
+      <MainContainer />
+    </div>
   );
 };
 

@@ -22,6 +22,15 @@
   - above bugfixes removed by attaching the event onAuthStateChange to some common comp like Header instead of Body comp.
 - code cleanup - unsubscribe onAuthStateChange when comp unmounts
 - get nowPlaying movies list from TMBD Api and create a new movieslice to store the api result.
+    - Custom Hook for Now Playing Movies
+    - Create movieSlice
+    - Update Store with movies Data
+- Planning structure of MainContauiner & secondary container
+- created video title and video background
+    - from list of now playing movie get the first movie and extract its movie id. pass that movie id to VideoContainer and make an api call to fetch the movie trailer of that id.
+    - save the trailer video info in new slice - trailer video
+    - create a custom hook for trailer video info
+- created    
 
 # Features
 - Login/Sign Up
