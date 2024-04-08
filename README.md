@@ -37,7 +37,21 @@
 - build Movie Card
 - TMDB Image CDN URL
 - Made the Browse page amazing with Tailwind CSS
-- useTrendingMovies and useTopRatedMovies Custom hook    
+- useTrendingMovies and useTopRatedMovies Custom hook
+- GPT Search Page
+- GPT Search Bar
+- (BONUS) Multi-language Feature in our App
+- Get Open AI Api Key
+- Gpt Search API Call
+- fetched gptMoviesSuggestions from TMDB
+- created gptSlice added data
+- Resused Movie List component to make movie suggestion container
+- Memoization: api calls shouldnt go if data is already present in store
+- Added .env file
+- Adding .env file to gitignore  
+
+
+
 
 # Features
 - Login/Sign Up

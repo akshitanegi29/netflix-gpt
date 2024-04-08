@@ -1,15 +1,19 @@
 /* eslint-disable no-lone-blocks */
 import useNowPlaying from "../hooks/useNowPlaying";
-import useTopRatedMovies from "../hooks/useTopRatedMovies"
-import useTrendingMovies from "../hooks/useTrendingMovies"
+import useTopRatedMovies from "../hooks/useTopRatedMovies";
+import useTrendingMovies from "../hooks/useTrendingMovies";
 
 import Header from "./Header";
 import MainContainer from "./MainContainer";
-import SecondaryContainer from "./SecondaryContainer"
+import SecondaryContainer from "./SecondaryContainer";
+import { useSelector } from "react-redux";
+import GPTSearch from "./GPTSearch";
 const Browse = () => {
   useNowPlaying();
-  useTopRatedMovies()
-  useTrendingMovies()
+  useTopRatedMovies();
+  useTrendingMovies();
+
+  const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
 
   {
     /*
@@ -25,8 +29,14 @@ const Browse = () => {
   return (
     <div>
       <Header />
-      <MainContainer />
-      <SecondaryContainer/>
+      {showGptSearch ? (
+        <GPTSearch />
+      ) : (
+        <>
+          <MainContainer />
+          <SecondaryContainer />
+        </>
+      )}
     </div>
   );
 };
