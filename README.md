@@ -66,3 +66,4 @@
     - MovieLists * N
 - Netflix GPT
     - Search bar for movie suggestion
+- Deployed - https://netflix-gpt-c693c.web.app    
