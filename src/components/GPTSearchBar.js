@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { langTranslation } from "../utils/languageConstant";
 import { openai } from "../utils/openai";
 import { TMDBHeader } from "../utils/constants";
-import { addGptMovieResult } from "../utils/gptSlice";
+import { addGptMovieResult, isSearchClicked } from "../utils/gptSlice";
 
 const GPTSearchBar = () => {
   const dispatch = useDispatch()
@@ -17,7 +17,7 @@ const GPTSearchBar = () => {
   }
 
   const gptSearchHandler = async () => {
-
+    dispatch(isSearchClicked(true))
     //api call to chat gpt
     const gptQuery =
       "Act as a Movie Recommendation system and suggest some movies for the query : " +
